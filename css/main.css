@@ -1,0 +1,285 @@
+@charset "UTF-8";
+/*переменные для шрифтов*/
+@font-face {
+  font-family: 'roboto';
+  src: url(../fonts/roboto-v20-latin-regular.woff);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url(../fonts/roboto-v20-latin-500.woff);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'roboto';
+  src: url(../fonts/roboto-v20-latin-900.woff);
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'raleway';
+  src: url(../fonts/raleway-v18-latin-700.woff);
+  font-style: normal;
+  font-weight: 700;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #757575;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: green;
+}
+
+/* Стили портфолио*/
+.portfolio h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.portfolio p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.navigacion, .contacts {
+  display: none;
+}
+
+.logo, .logo-white {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.logo {
+  color: #000000;
+}
+
+.logo-white {
+  color: #FFFFFF;
+}
+
+.logo-web {
+  color: #2196F3;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+.hero-cont {
+  background: #C4C4C4;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fond.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+}
+
+.hero .hero-title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  margin: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  background-color: #2196F3;
+  display: inline-block;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  cursor: pointer;
+  border: none;
+}
+
+/*наши качества*/
+.our-quality {
+  padding: 60px 15px;
+}
+
+.visually-hidder {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.quality .quality-title {
+  color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.quality .quality-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.quality-item {
+  width: 450px;
+}
+
+.quality-item .icon {
+  /* border: 1px solid red; */
+  height: 120px;
+  border-radius: 4px;
+  background: #F5F4FA;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quality .quality-item + .quality-item {
+  margin-top: 30px;
+}
+
+.section-title {
+  color: #212121;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-work {
+  display: none;
+}
+
+.section-team {
+  background-color: #F5F4FA;
+  padding: 60px 15px;
+}
+
+.team img {
+  display: block;
+}
+
+.team .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: #FFFFFF;
+  width: 450px;
+}
+
+.team .item + .item {
+  margin-top: 30px;
+}
+
+.team-worker {
+  padding: 30px 122px 24px 122px;
+  text-align: center;
+}
+
+.team .team-name {
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.team .team-prof {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+/* задаем цвет иконок в секции наша команда и постоянные клиенты */
+.team-worker .network .icon, .clients-link .icon {
+  fill: currentColor;
+}
+
+.network-link .link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  color: #AFB1B8;
+  border-radius: 50%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.network-link .link:hover, .network-link .link:focus {
+  color: #FFFFFF;
+  background: #2196F3;
+}
+
+.network {
+  display: flex;
+}
+/*# sourceMappingURL=main.css.map */

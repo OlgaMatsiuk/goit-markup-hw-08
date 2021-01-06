@@ -1,0 +1,44 @@
+.hero{
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    
+    &-cont{
+        background:#C4C4C4 ;
+        width: 100%;
+        background-image: linear-gradient(to right, rgba(47,48,58,0.4),rgba(47,48,58,0.4)), url(../images/fond.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 400px;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: cover;
+        
+    } 
+    & .hero-title{
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;    
+        letter-spacing: 0.06em;
+        color: $additional-color;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    } 
+}
+    .hero-button{
+    margin: 0;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
+color: $additional-color;
+background-color: $accent-color;
+display: inline-block;
+min-width: 200px;
+height: 50px;
+border-radius: 4px;
+padding: 10px 32px;
+cursor: pointer;
+border: none;
+}
