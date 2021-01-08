@@ -1,6 +1,19 @@
 /*наши качества*/
 .our-quality{
-    padding: 60px 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // background-color: green;
+
+}
+.quality{
+    // margin: -15px;
+    // @media screen and (min-width: 768px) {
+    //     display: flex; 
+    // }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+        
+        
+    }
 }
 .visually-hidder{
     position: absolute;
@@ -21,6 +34,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 margin-bottom: 10px;
+text-align: center;
 }
 
 .quality .quality-text{
@@ -28,11 +42,38 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 }
+
+ @media screen and (min-width: 768px) {
+   .our-quality .quality{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    justify-content: center;
+    text-align: center;
+    }
+    .quality-item{
+        width: 354px;
+        margin: 15px;
+    }
+   }  
+   @media screen and (min-width: 1200px) {
+    .our-quality .quality{
+     display: flex;
+     flex-wrap: wrap;
+     margin: -15px;
+     justify-content: center;
+     text-align: center;
+     }
+     .quality-item{
+         width: 270px;
+         margin: 15px;
+     }
+    }   
 // .quality{
 //     display: flex;
 // }
-.quality-item{
-    width: 450px;
+.quality-item:not(:last-child) {
+   margin-bottom: 30px;
 }
 .quality-item .icon{
     /* border: 1px solid red; */
@@ -45,6 +86,6 @@ line-height: 1.71;
     align-items: center;
 }
 
-.quality .quality-item + .quality-item{
-    margin-top: 30px;
-}
+// .quality .quality-item + .quality-item{
+//     margin-top: 30px;
+// }

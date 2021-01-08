@@ -14,7 +14,15 @@
         margin-left: auto;
         margin-right: auto;
         background-size: cover;
-        
+
+       @media screen and (min-width: 768px) {
+        height: 400px;
+        max-width: 768px;
+       } 
+       @media screen and (min-width: 1200px) {
+        height: 600px;
+        max-width: 1600px;
+       }
     } 
     & .hero-title{
         font-weight: 900;
@@ -26,6 +34,7 @@
         margin-bottom: 30px;
     } 
 }
+
     .hero-button{
     margin: 0;
 font-weight: 700;
