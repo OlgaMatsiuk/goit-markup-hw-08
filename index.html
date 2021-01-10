@@ -14,14 +14,28 @@
 <body>
     <header class="header">
         <div class="container main-header">
+            <a class="logo" href="/"><span class="logo-web">Web</span>Studio</a>
+            <div class="menu-container is-open" data-menu id="menu-container">
+
             <nav class="main-nav">
-                <a class="logo" href="/"><span class="logo-web">Web</span>Studio</a>
+                <!-- <a class="logo" href="/"><span class="logo-web">Web</span>Studio</a> -->
                 <ul class="navigacion">
                     <li class="item"><a class="studio" href="">Студия</a></li>
                     <li class="item"><a class="link" href="./portfolio.html">Портфолио</a></li>
                     <li class="item"><a class="link" href="">Контакты</a></li>
                 </ul>
-            </nav>
+                <!-- <button type="button" class="mobile-menu is-open" 
+                     aria-controls="menu-container"
+                     aria-expanded="false" data-menu-button>
+                        <svg width="24" height="16" aria-label="переключатель мобального меню">
+                            <use class="icon-menu" href="./images/mobyl-sprite.svg#icon-menu" ></use>
+                            <use class="icon-cross" href="./images/mobyl-sprite.svg#icon-bigclose" ></use>
+                        </svg>
+                </button> -->
+                    <!-- <div class="menu-container is-open" data-menu id="menu-container"> -->
+                        
+                    <!-- </div> -->
+            <!-- </nav> -->
             <ul class="contacts">
                 <li class="item">
                     <a class="telefon focus" href="mailto:info@devstudio.com">
@@ -35,6 +49,17 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+        </nav>
+
+        </div>
+                <button type="button" class="mobile-menu is-open" 
+                     aria-controls="menu-container"
+                     aria-expanded="false" data-menu-button>
+                        <svg width="24" height="16" aria-label="переключатель мобального меню">
+                            <use class="icon-menu" href="./images/mobyl-sprite.svg#icon-menu" ></use>
+                            <use class="icon-cross" href="./images/mobyl-sprite.svg#icon-bigclose" ></use>
+                        </svg>
+                </button>
         </div>
     </header>
     <main>
@@ -319,6 +344,7 @@
         </footer>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+                
                 <button class="close-modal" type="button" data-modal-close>
                     <svg class="icon" width="11" height="11">
                       <use href="./images/sprite-modal2.svg#icon-close-black-18dp"></use>
@@ -366,5 +392,7 @@
             </div>
         </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
+
 </body>
 </html>

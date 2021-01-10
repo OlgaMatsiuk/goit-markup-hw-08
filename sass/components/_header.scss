@@ -1,7 +1,7 @@
 // .navigacion, .contacts{
 //     display:none;
 // }
-.header {
+.header{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -22,18 +22,27 @@
 .navigacion{
     margin-left: 88px;
 }
-.navigacion,.main-nav,.main-header{
+@media screen and (min-width: 768px) {
+.navigacion,.main-nav,.main-header,.menu-container{
     display: flex;
+}
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .contacts .item:not(:last-child) {
         margin-bottom: 10px;
     }
+    .contacts {
+        margin-left: auto;
+    }
     
 }
 @media screen and (min-width: 1200px) {
-    .contacts{
+    .contacts {
         display: flex;
+        // margin-left: auto;
+        // margin-right: auto;
+        margin-left: 100px;
+
     }
     .navigacion{
         margin-left: 93px;
@@ -57,7 +66,7 @@
     fill: currentColor;
 }
 .contacts{
-    margin-left: auto;
+    // margin-right: auto;
 
     & .telefon{
         display: inline-flex;
@@ -112,8 +121,8 @@
 .contacts .item svg{
     margin-right: 10px;
 }
-@media screen and (max-width: 767px) {
-.navigacion, .contacts{
-    display:none;
-}
-}
+// @media screen and (max-width: 767px) {
+// .navigacion .item, .contacts{
+//     display:none;
+// }
+// }
