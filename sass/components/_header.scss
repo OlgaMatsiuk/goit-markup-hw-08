@@ -19,29 +19,38 @@
     width: 100%;
     }
 }
-.navigacion{
-    margin-left: 88px;
-}
+// .navigacion{
+//     margin-left: 88px;
+// }
 @media screen and (min-width: 768px) {
 .navigacion,.main-nav,.main-header,.menu-container{
     display: flex;
+}
+.navigacion .item+.item{
+    margin-left: 50px;
 }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .contacts .item:not(:last-child) {
         margin-bottom: 10px;
     }
+    .navigacion{
+        margin-left: 88px;
+    }
     .contacts {
         margin-left: auto;
     }
-    
+    .menu-container{
+        align-items: center;
+    }
 }
 @media screen and (min-width: 1200px) {
     .contacts {
         display: flex;
-        // margin-left: auto;
+        margin-left: auto;
         // margin-right: auto;
-        margin-left: 100px;
+
+        // margin-left: 305px;
 
     }
     .navigacion{
@@ -52,15 +61,19 @@
         padding-bottom: 32px;
     }
     .contacts .item+.item{
-        margin-left: 50px;
+        margin-left: 30px;
     }
 }
 .main-nav{
     align-items: center;
+    width: 100%;
 }
-.main-header{
-    align-items: center;
+.menu-container{
+    width: 100%;
 }
+// .main-header{
+//     align-items: center;
+// }
 
 .contacts-icon,.icon{
     fill: currentColor;
@@ -85,9 +98,12 @@
 .navigacion .studio{
     color: $accent-color;
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     position: relative;
+    @media screen and (min-width: 768px){
+        padding-top: 32px;
+    padding-bottom: 32px;
+    }
 }
 .studio::after{
     content: '';
@@ -113,10 +129,7 @@
     color: $accent-color;
     }
 }
-/*задаем марджин элементам ли кроме последнего*/
-.navigacion .item+.item{
-    margin-left: 50px;
-}
+
 
 .contacts .item svg{
     margin-right: 10px;
