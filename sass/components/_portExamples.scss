@@ -23,6 +23,9 @@
         margin-top: -15px;
         margin-bottom: 40px;
     }
+    .examples .item + .item {
+        margin-top: 30px;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 .examples .item{

@@ -1,3 +1,8 @@
+.team img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .section-team{
     background-color: $bgc-additional;
     padding-top: 60px;
@@ -17,6 +22,16 @@
     padding: 30px 122px 24px 122px;
     text-align: center;
 }
+@media screen and (max-width: 767px) {
+    .section-team .item{
+        width: 450px;
+    }
+    
+    .team .item + .item{
+        margin-top: 30px;
+    }   
+}
+
 @media screen and (min-width: 768px) {
 
     .section-team .team{
@@ -42,6 +57,7 @@
         margin: -15px;
 
     }
+    
     .section-team .item {
         width: 270px;
         margin: 15px;
@@ -51,14 +67,9 @@
         text-align: center;
     }
 }
-.team img{
-    display: block;
-}
 
 
-// .team .item + .item{
-//     margin-top: 30px;
-// }
+
 
 .team .team-name{
     color: $secondary-color;

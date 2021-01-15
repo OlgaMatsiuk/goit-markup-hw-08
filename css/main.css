@@ -546,7 +546,6 @@ h1, h2, h3, p {
 /*наши качества*/
 .our-quality {
   padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .visually-hidder {
@@ -620,6 +619,17 @@ h1, h2, h3, p {
   align-items: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-work {
+    display: none;
+  }
+}
+
+.section-work {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   color: #212121;
   font-weight: 700;
@@ -629,8 +639,45 @@ h1, h2, h3, p {
   margin-bottom: 30px;
 }
 
-.section-work {
-  display: none;
+.section-work-list img {
+  display: block;
+}
+
+.section-work-list {
+  display: flex;
+}
+
+.section-work-list .item + .item {
+  margin-left: 30px;
+}
+
+.work-overlay {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 27px 72px;
+  background: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.section-work .item {
+  position: relative;
+}
+
+.team img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section-team {
@@ -650,6 +697,15 @@ h1, h2, h3, p {
 .team-worker {
   padding: 30px 122px 24px 122px;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .section-team .item {
+    width: 450px;
+  }
+  .team .item + .item {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -682,10 +738,6 @@ h1, h2, h3, p {
     padding: 30px 32px;
     text-align: center;
   }
-}
-
-.team img {
-  display: block;
 }
 
 .team .team-name {
@@ -763,27 +815,25 @@ a {
   justify-content: center;
   align-items: center;
   color: #AFB1B8;
+  height: 90px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .clients-link .link {
     width: 210px;
-    height: 90px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-link .link {
     width: 226px;
-    height: 90px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients-link .link {
     width: 170px;
-    height: 90px;
   }
 }
 
@@ -873,6 +923,9 @@ a {
   .portfolio .filter {
     margin-top: -15px;
     margin-bottom: 40px;
+  }
+  .examples .item + .item {
+    margin-top: 30px;
   }
 }
 
