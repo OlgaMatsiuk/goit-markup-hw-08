@@ -54,6 +54,7 @@
  }
  .form-input{
      margin-bottom: 20px;
+     width: 450px;
  }
  
 }
@@ -78,6 +79,7 @@
         margin-bottom: 20px;
         margin-right: auto;
         margin-left: auto;
+        width: 450px;
     }
     
 }
@@ -86,6 +88,12 @@
         display: flex;
         align-items: baseline;
 
+    }
+    .text-form{
+        text-align: left;
+    }
+    .form-input{
+        width: 358px;
     }
     .form{
          margin-left: 93px;
@@ -159,7 +167,7 @@
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
     letter-spacing: 0.03em;
-    min-width: 450px;
+    // min-width: 450px;
     padding: 15px 16px;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.3);
