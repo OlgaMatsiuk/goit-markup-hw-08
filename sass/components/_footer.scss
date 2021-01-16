@@ -47,12 +47,17 @@
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
     letter-spacing: 0.03em;
-    // min-width: 450px;
+    // max-width: 450px;
     padding: 15px 16px;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background: none;
+    @media screen and (max-width: 767px) {
+        max-width: 450px;
+        margin-right: auto;
+        margin-left: autogit;
+    }
     @media screen and (max-width: 1199px) {
         margin-bottom: 20px;
         width: 450px;  

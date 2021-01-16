@@ -906,10 +906,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .examples .item {
-    width: 450px;
-  }
-  .examples img {
-    width: 450px;
+    width: 100%;
   }
   .filter .item {
     margin-top: 15px;
@@ -1052,6 +1049,14 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background: none;
+}
+
+@media screen and (max-width: 767px) {
+  .form-input {
+    max-width: 450px;
+    margin-right: auto;
+    margin-left: autogit;
+  }
 }
 
 @media screen and (max-width: 1199px) {
