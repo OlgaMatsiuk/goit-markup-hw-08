@@ -1,19 +1,7 @@
 /*наши качества*/
 .our-quality{
     padding-top: 60px;
-    // padding-bottom: 60px;
-    // background-color: green;
-
-}
-.quality{
-    // margin: -15px;
-    // @media screen and (min-width: 768px) {
-    //     display: flex; 
-    // }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-        
-        
-    }
+    padding-bottom: 60px;
 }
 .visually-hidder{
     position: absolute;
@@ -25,25 +13,24 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
 .quality .quality-title{
-color: $secondary-color;
+    color: $secondary-color;
     font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-margin-bottom: 10px;
-text-align: center;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .quality .quality-text{
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
 }
 
- @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
    .our-quality .quality{
     display: flex;
     flex-wrap: wrap;
@@ -55,28 +42,16 @@ line-height: 1.71;
         width: 354px;
         margin: 15px;
     }
-   }  
-   @media screen and (min-width: 1200px) {
-    .our-quality .quality{
-     display: flex;
-     flex-wrap: wrap;
-     margin: -15px;
-     justify-content: center;
-     text-align: center;
-     }
+}  
+@media screen and (min-width: 1200px) {
      .quality-item{
          width: 270px;
-         margin: 15px;
      }
-    }   
-// .quality{
-//     display: flex;
-// }
+}   
 .quality-item:not(:last-child) {
    margin-bottom: 30px;
 }
 .quality-item .icon{
-    /* border: 1px solid red; */
     height: 120px;
     border-radius: 4px;
     background: $bgc-additional;
@@ -85,7 +60,3 @@ line-height: 1.71;
     justify-content: center;
     align-items: center;
 }
-
-// .quality .quality-item + .quality-item{
-//     margin-top: 30px;
-// }

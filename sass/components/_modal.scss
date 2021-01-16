@@ -5,8 +5,8 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
-        opacity: 1;
-overflow-y: scroll;
+    opacity: 1;
+    overflow-y: scroll;
 }
 @media screen and (min-width: 480px) {
     .modal{
@@ -14,11 +14,10 @@ overflow-y: scroll;
     }
     .modal-input, .modal-textarea {
         width: 370px;
-
     }
     .modal-textarea{
-width: 370px;
-}
+        width: 370px;
+    }
 }
 @media screen and (min-width: 1200px) {
     .modal{
@@ -28,11 +27,10 @@ width: 370px;
         width: 448px;
     }
     .modal-textarea{
-width: 448px;
+        width: 448px;
+    }
 }
-}
-    .modal{
-    // width: 528px;
+.modal{
     height: 581px;
     background-color: $additional-color;
     position: absolute;
@@ -44,10 +42,8 @@ width: 448px;
 
     .backdrop.is-hidden &{
         transform: translate(-50%,-50%) scale(0.8);
-    
     }
 }
-
 .close-modal{
     position: absolute;
     top: 8px;
@@ -79,7 +75,6 @@ width: 448px;
 }
 .modal-input{
     display: block;
-    // width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -91,7 +86,6 @@ width: 448px;
     position: relative;
     color: $secondary-color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 .modal-icon .icon{
     position: absolute;
@@ -102,28 +96,26 @@ width: 448px;
 }
 .modal-field{
     display: block;
-font-weight: 400;
-font-size: 12px;
-line-height: 1.16;
-letter-spacing: 0.01em;
-margin-bottom: 4px;
-text-align: left;
-color: $main-color;
-margin-top: 10px;
-
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+    text-align: left;
+    color: $main-color;
+    margin-top: 10px;
 }
 .label-check{
     display: block;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-margin-left: 36px;
-color: $main-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-left: 36px;
+    color: $main-color;
 }
 .modal-textarea{
     display: block;
-    // width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -143,8 +135,6 @@ color: $main-color;
             border-color: $accent-color;
         }
 }
-
-
 .modal-check{
     display:flex;
     margin-top: 20px;
@@ -154,7 +144,6 @@ color: $main-color;
 .modal-input:not(:placeholder-shown), .modal-input:focus{
     padding-left: 40px;
     border-color: $accent-color;
-    /* color: var(--accent-color); */
 }
 
 .modal-input:focus + .icon{
@@ -178,10 +167,10 @@ color: $main-color;
     left: 11px;
     width: 16px;
     height: 15px;
-border-radius: 2px;
-border: 2px solid $secondary-color;
-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 2px;
+    border: 2px solid $secondary-color;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .check-input:focus + &{
     border-color: $accent-color;
@@ -194,18 +183,15 @@ color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4
     border-color: $accent-color;
     }
 }
-
 .modal-form {
     text-align: center;
 }
-
 .hero-button.check{
     margin-top: 30px;
     &:hover, &:focus{
         background-color: #188CE8;
     }
 }
-
 .modal-title{
 font-weight: 700;
 font-size: 20px;
@@ -218,9 +204,7 @@ margin-bottom: 12px;
 .modal-field + .modal-field{
     margin-top: 10px;
 }
-
 .modal-link{
     text-decoration: underline;
     color: $accent-color;
-
 }

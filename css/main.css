@@ -163,6 +163,13 @@ h1, h2, h3, p {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .main-nav {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 .menu-container {
   width: 100%;
 }
@@ -235,15 +242,15 @@ h1, h2, h3, p {
   letter-spacing: 0.03em;
 }
 
+.logo {
+  color: #000000;
+}
+
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 1.19;
   }
-}
-
-.logo {
-  color: #000000;
 }
 
 .logo-white {
@@ -469,7 +476,6 @@ h1, h2, h3, p {
 .modal-input:not(:placeholder-shown), .modal-input:focus {
   padding-left: 40px;
   border-color: #2196F3;
-  /* color: var(--accent-color); */
 }
 
 .modal-input:focus + .icon {
@@ -546,6 +552,7 @@ h1, h2, h3, p {
 /*наши качества*/
 .our-quality {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .visually-hidder {
@@ -591,16 +598,8 @@ h1, h2, h3, p {
 }
 
 @media screen and (min-width: 1200px) {
-  .our-quality .quality {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-    justify-content: center;
-    text-align: center;
-  }
   .quality-item {
     width: 270px;
-    margin: 15px;
   }
 }
 
@@ -609,7 +608,6 @@ h1, h2, h3, p {
 }
 
 .quality-item .icon {
-  /* border: 1px solid red; */
   height: 120px;
   border-radius: 4px;
   background: #F5F4FA;
@@ -691,7 +689,6 @@ h1, h2, h3, p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #FFFFFF;
-  width: 450px;
 }
 
 .team-worker {
@@ -700,9 +697,6 @@ h1, h2, h3, p {
 }
 
 @media screen and (max-width: 767px) {
-  .section-team .item {
-    width: 450px;
-  }
   .team .item + .item {
     margin-top: 30px;
   }
@@ -930,14 +924,14 @@ a {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .examples .item {
-    width: 354px;
-    margin: 15px;
-  }
   .examples {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
+  }
+  .examples .item {
+    width: 354px;
+    margin: 15px;
   }
 }
 
@@ -1012,6 +1006,12 @@ a {
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
+}
+
 .footer .address {
   color: #FFFFFF;
   font-style: normal;
@@ -1019,10 +1019,6 @@ a {
 
 .footer-address {
   margin-top: 20px;
-}
-
-.text-form {
-  display: block;
 }
 
 .social-networks {
@@ -1045,16 +1041,47 @@ a {
   margin-top: 8px;
 }
 
-@media screen and (max-width: 767px) {
-  .footer {
-    text-align: center;
-  }
-  .network {
-    justify-content: center;
-  }
+.form-input {
+  display: block;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.03em;
+  padding: 15px 16px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background: none;
+}
+
+@media screen and (max-width: 1199px) {
   .form-input {
     margin-bottom: 20px;
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .form-input {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-input {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+.text-form {
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .text-form {
+    text-align: left;
   }
 }
 
@@ -1067,27 +1094,12 @@ a {
   .footer .social {
     margin-left: 165px;
   }
-  .footer {
-    text-align: center;
-  }
-  .form-input {
-    margin-bottom: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 450px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .footer .container {
     display: flex;
     align-items: baseline;
-  }
-  .text-form {
-    text-align: left;
-  }
-  .form-input {
-    width: 358px;
   }
   .form {
     margin-left: 93px;
@@ -1097,16 +1109,16 @@ a {
   .form-subscribe {
     display: flex;
   }
-  .text-form {
-    display: block;
-  }
-  .form-input {
-    margin-right: 12px;
-  }
 }
 
 .network {
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .network {
+    justify-content: center;
+  }
 }
 
 .hero-button.form-btn {
@@ -1144,28 +1156,13 @@ a {
   background: #2196F3;
 }
 
-.form-input {
-  display: block;
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-  letter-spacing: 0.03em;
-  padding: 15px 16px;
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  background: none;
-}
-
-.text-form {
-  display: block;
-}
-
 .mobile-menu {
   display: block;
   margin: 0px;
   border: none;
   margin-left: auto;
+  cursor: pointer;
+  color: #212121;
   background-color: transparent;
 }
 
@@ -1175,11 +1172,6 @@ a {
   }
 }
 
-.mobile-menu {
-  cursor: pointer;
-  color: #212121;
-}
-
 .menu-button {
   fill: currentColor;
 }
@@ -1187,11 +1179,6 @@ a {
 .mobile-menu:focus .menu-button,
 .mobile-menu:hover .menu-button {
   color: #2196F3;
-}
-
-.mobile-menu {
-  cursor: pointer;
-  color: #212121;
 }
 
 .mobile-menu .icon-cross {

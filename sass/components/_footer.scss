@@ -6,6 +6,9 @@
     letter-spacing: 0.03em;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (max-width: 1199px) {
+       text-align: center; 
+    }
 
     & .address{
         color: $additional-color;
@@ -17,9 +20,6 @@
     }
 }    
 
-.text-form{
-    display: block;
-}
 .social-networks{
     font-size: 14px;
     font-weight: 700;
@@ -30,103 +30,82 @@
     margin-bottom: 20px;
     margin-top: 60px;
 
-    }
-    .address-tel{
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        font-style: normal;
-        color: rgba(255, 255, 255, 0.6);
-        margin-top: 8px;
-    
-     }
-@media screen and (max-width: 767px) {
-    .footer{
-        text-align: center;
-
-    }
- .network{
-     justify-content: center;
- }
- 
- .social-networks{
-    //  margin-top: 60px;
- }
- .form-input{
-     margin-bottom: 20px;
-     width: 450px;
- }
- 
 }
+.address-tel{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 8px;
+    
+}
+//     /*стилизация формы*/
+.form-input{
+    display: block;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.03em;
+    // min-width: 450px;
+    padding: 15px 16px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: none;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+        width: 450px;  
+    }
+    @media screen and (min-width: 767px) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 358px; 
+        margin-right: 12px;
+    }
+}
+    
+.text-form{
+    display: block;
+    @media screen and (min-width: 1200px){
+        text-align: left;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .footer .tablet-flex{
         display: flex;
         align-items: baseline;
-        // margin-left: auto;
-        // margin-right: auto;
         justify-content: center;
-
     }
-    
     .footer .social{
         margin-left: 165px;
-    }
-    .footer{
-        // justify-content: center;
-        text-align: center;
-    }
-    .form-input{
-        margin-bottom: 20px;
-        margin-right: auto;
-        margin-left: auto;
-        width: 450px;
-    }
-    
+    }  
 }
 @media screen and (min-width: 1200px){
     .footer .container{
         display: flex;
         align-items: baseline;
-
     }
-    .text-form{
-        text-align: left;
-    }
-    .form-input{
-        width: 358px;
-    }
+    
     .form{
-         margin-left: 93px;
+        margin-left: 93px;
         align-items: flex-end;
         justify-content: flex-start;
-            }
-            .form-subscribe{
-                display: flex;
             
+            &-subscribe{
+                display: flex;
             }
-            .text-form{
-                display: block;
-            }
-            .form-input{
-                margin-right: 12px;
-            }
+    }
 }
-// .address-tel{
-//     display: flex;
-//     margin-top: 9px;
-    
-//     .footer &{
-//         color: $contacts-color;
-//         font-style: normal;
-//     }
-// }
-// .address-container{
-//     margin-right: 70px;
-// }
 .network{
     display: flex;
+    @media screen and (max-width: 767px){
+        justify-content: center;
+    }
 }
-
 .hero-button.form-btn{
     padding: 10px 29px;
     text-align: left;
@@ -151,7 +130,6 @@
     border-radius: 50%;
 }
     
-
 .social .network-link .icon{
     fill: $additional-color;
 }
@@ -160,30 +138,3 @@
     background: $accent-color;
 }
     
-//     /*стилизация формы*/
-    .form-input{
-    display: block;
-    font-size: 16px;
-    line-height: 1.25;
-    color: rgba(255, 255, 255, 0.6);
-    letter-spacing: 0.03em;
-    // min-width: 450px;
-    padding: 15px 16px;
-    cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    background: none;
-    // margin-right: 12px;
-    }
-    
-//     .form{
-//         margin-left: 93px;
-//         align-items: flex-end;
-//     }
-//     .form-subscribe{
-//         display: flex;
-    
-//     }
-    .text-form{
-        display: block;
-    }
