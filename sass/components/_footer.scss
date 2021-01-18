@@ -18,8 +18,12 @@
     &-address{
         margin-top: 20px;
     }
-}    
-
+} 
+@media screen and (min-width: 1200px) {   
+.address-container{
+    width: 231px;
+}
+}
 .social-networks{
     font-size: 14px;
     font-weight: 700;

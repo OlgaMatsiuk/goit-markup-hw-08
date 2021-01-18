@@ -7,6 +7,10 @@
     <!--подключение шрифтов-->
      <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
 <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> -->
+<link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">    
 <!-- <link rel="stylesheet" href="./css/styles.css"> -->
 <link rel="stylesheet" href="./css/main.min.css">
@@ -21,8 +25,8 @@
                     aria-controls="menu-container"
                     aria-expanded="false" data-menu-button>
                    <svg class="menu-button" width="24" height="16" aria-label="переключатель мобального меню">
-                       <use class="icon-menu" href="./images/mobyl-sprite.svg#icon-menu" ></use>
-                       <use class="icon-cross" href="./images/mobyl-sprite.svg#icon-bigclose" ></use>
+                       <use class="icon-menu" href="./images/menuSprite.svg#icon-Menu24" ></use>
+                       <use class="icon-cross" href="./images/menuSprite.svg#icon-Close24" ></use>
                    </svg>
                 </button>
                 <div class="menu-container" data-menu id="menu-container">
@@ -109,19 +113,22 @@
                 <li class="item">
                     <img src="./images/box1.jpg" 
                     alt="" width="370"
-                    srcset="./images/box@2x.jpg">
+                    srcset="./images/box1.jpg 1x,
+                    ./images/box@2x.jpg 2x">
                     <span class="work-overlay">Десктопные приложения</span>
                 </li>
                 <li class="item">
                     <img src="./images/box2.jpg" 
                     alt="" width="370"
-                    srcset="./images/box2@2x.jpg">
+                    srcset="./images/box2.jpg 1x,
+                     ./images/box2@2x.jpg 2x">
                     <span class="work-overlay">Мобильные приложения</span>
                 </li>
                 <li class="item">
                     <img src="./images/box3.jpg" 
                     alt="" width="370"
-                    srcset="./images/box3@3x.jpg">
+                    srcset="./images/box3.jpg 1x,
+                     ./images/box3@3x.jpg 2x">
                     <span class="work-overlay">Дизайнерские решения</span>
                 </li>
             </ul>
@@ -134,7 +141,8 @@
                 <li class="item">
                     <img src="./images/igor@1x.jpg" 
                     alt="Игорь Демьяненко"
-                    srcset="./images/igor@2x.jpg"
+                    srcset="./images/igor@1x.jpg 1x,
+                     ./images/igor@2x.jpg 2x"
                     >
                     <div class="team-worker">
                         <h3 class="team-name">Игорь Демьяненко</h3>
@@ -166,7 +174,8 @@
             
                 <li class="item">
                     <img src="./images/olga@1x.jpg" alt="Ольга Репина"
-                    srcset="./images/olga@2x.jpg">
+                    srcset="./images/olga@1x.jpg 1x,
+                     ./images/olga@2x.jpg 2x">
                     <div class="team-worker">
                         <h3 class="team-name">Ольга Репина</h3>
                         <p class="team-prof">Frontend Developer</p>
@@ -198,7 +207,8 @@
                 <li class="item">
                     <img src="./images/kola@1x.jpg" 
                     alt="Николай Тарасов"
-                    srcset="./images/kola@2x.jpg">
+                    srcset="./images/kola@1x.jpg 1x,
+                     ./images/kola@2x.jpg 2x">
                     <div class="team-worker">
                         <h3 class="team-name">Николай Тарасов</h3>
                         <p class="team-prof">Marketing</p>
@@ -230,7 +240,8 @@
                 <li class="item">
                     <img src="./images/misha@1x.jpg" 
                     alt="Михаил Ермаков"
-                    srcset="./images/misha@2x.jpg">
+                    srcset="./images/misha@1x.jpg 1x,
+                     ./images/misha@2x.jpg 2x">
                     <div class="team-worker">
                         <h3 class="team-name">Михаил Ермаков</h3>
                         <p class="team-prof">UI Designer</p>

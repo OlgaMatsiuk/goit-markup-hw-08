@@ -11,6 +11,7 @@
 @media screen and (min-width: 480px) {
     .modal{
         width: 450px;
+        height: 609px;
     }
     .modal-input, .modal-textarea {
         width: 370px;
@@ -22,6 +23,7 @@
 @media screen and (min-width: 1200px) {
     .modal{
         width: 528px;
+        height: 581px;
     }
     .modal-input, .modal-textarea {
         width: 448px;
@@ -31,7 +33,6 @@
     }
 }
 .modal{
-    height: 581px;
     background-color: $additional-color;
     position: absolute;
     top: 50%;
@@ -39,6 +40,12 @@
     transform: translate(-50%,-50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
+    // height: 609px;
+    @media screen and (min-width: 1200px) {
+        // height: 581px;
+        
+    }
+
 
     .backdrop.is-hidden &{
         transform: translate(-50%,-50%) scale(0.8);
@@ -108,11 +115,17 @@
 .label-check{
     display: block;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-left: 36px;
+    margin-left: 22px;
     color: $main-color;
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+        margin-left: 36px;
+        
+    }
 }
 .modal-textarea{
     display: block;
@@ -138,7 +151,7 @@
 .modal-check{
     display:flex;
     margin-top: 20px;
-    align-items: center;
+    // align-items: center;
     position: relative;
 }
 .modal-input:not(:placeholder-shown), .modal-input:focus{
@@ -163,8 +176,13 @@
     display: block;
     content: '';
     position: absolute;
-    top: 5px;
-    left: 11px;
+    top: 0px;
+    left: 0px;
+    @media screen and (min-width: 1200px) {
+        top: 5px;
+        left: 11px;  
+    }
+    
     width: 16px;
     height: 15px;
     border-radius: 2px;
@@ -205,6 +223,7 @@ margin-bottom: 12px;
     margin-top: 10px;
 }
 .modal-link{
+    display: inline;
     text-decoration: underline;
     color: $accent-color;
 }
