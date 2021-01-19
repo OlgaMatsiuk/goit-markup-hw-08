@@ -45,22 +45,30 @@
     
 }
 //     /*стилизация формы*/
+@media screen and (max-width: 767px){
+    .form-input{
+        // width: 100%;
+// display: none;
+    }
+
+}
 .form-input{
     display: block;
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
     letter-spacing: 0.03em;
-    // max-width: 450px;
     padding: 15px 16px;
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background: none;
-    @media screen and (max-width: 767px) {
-        max-width: 450px;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        // width: 100%;
         margin-right: auto;
-        margin-left: autogit;
+        margin-left: auto;
+        // display: none;
     }
     @media screen and (max-width: 1199px) {
         margin-bottom: 20px;

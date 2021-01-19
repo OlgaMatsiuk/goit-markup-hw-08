@@ -1051,11 +1051,11 @@ a {
   background: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .form-input {
-    max-width: 450px;
+    width: 450px;
     margin-right: auto;
-    margin-left: autogit;
+    margin-left: auto;
   }
 }
 
