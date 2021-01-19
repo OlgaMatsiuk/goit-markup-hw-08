@@ -46,9 +46,8 @@
 }
 //     /*стилизация формы*/
 @media screen and (max-width: 767px){
-    .form-input{
-        // width: 100%;
-// display: none;
+    .form{
+        width: 100%;
     }
 
 }
@@ -63,14 +62,12 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background: none;
-    @media screen and (min-width: 480px) {
-        width: 450px;
-        // width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        // display: none;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 20px;
+        
     }
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-bottom: 20px;
         width: 450px;  
     }
@@ -97,6 +94,8 @@
         align-items: baseline;
         justify-content: center;
     }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {    
     .footer .social{
         margin-left: 165px;
     }  
@@ -106,6 +105,9 @@
         display: flex;
         align-items: baseline;
     }
+    .footer .social{
+        margin-left: 70px;
+    } 
     
     .form{
         margin-left: 93px;
